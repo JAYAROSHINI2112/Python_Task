@@ -1,0 +1,17 @@
+n = 5;t = 9
+for i in range (n,0,-1):
+    for j in range(n,i-1,-1):
+        print(j,end=" ")  
+    for j in range(i,t):
+        print(i,end=" ")      
+    t -= 2
+
+    print( )    
+    
+    o/p
+    
+5 5 5 5 5 
+5 4 4 4 4 
+5 4 3 3 3 
+5 4 3 2 2 
+5 4 3 2 1 
