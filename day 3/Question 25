@@ -1,0 +1,36 @@
+n = 5;opt = 0;t=2
+for i in range (1,n):
+    if(i == 1):
+        temp = 1
+    elif(i == 2):
+        temp = 4 
+        opt = 5
+    elif(i == 3): 
+        temp = 25
+        opt = 11
+    else:
+        temp = 100
+        opt = 21
+    for j in range(1,t):
+        print(temp,end=" ")
+        temp += opt
+        if(i == 5): 
+            opt -=  2
+        elif(i == 3):
+            opt += 2
+        elif(i == 4):
+            opt += 2
+        else:
+            if(i == 2):
+                opt += 2
+            else:    
+                opt -= 2
+    t +=2        
+    print()
+    
+    o/p
+    
+1 
+4 9 16 
+25 36 49 64 81 
+100 121 144 169 196 225 256 
