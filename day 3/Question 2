@@ -17,28 +17,11 @@ for i in range (1,n+1):
         x = 1;y = 9
     for j in range(1,n+1):
         print(temp,end=" ")
-        temp += opt
-        if(i == 1): 
-            if(j % 2 == 0):
-                temp = temp + y
-            else:
-                temp = temp + x
-                
-        elif(i == 2):
-            if(j % 2 == 0):
-                temp = temp + y
-            else:
-                temp = temp + x
-        elif(i == 4):
-            if(j % 2 == 0):
-                temp = temp + y
-            else:
-                temp = temp + x
+        
+        if(j % 2 == 0):
+            temp += y
         else:
-            if(j % 2 == 0):
-                temp = temp + y
-            else:
-                temp = temp + x
+            temp += x
         
     print()
     
